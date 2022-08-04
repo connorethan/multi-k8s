@@ -1,6 +1,6 @@
-build -t connorethan/multi-client:latest -t connorethan/multi-client:$SHA -f ./client/Dockerfile ./client
-build -t connorethan/multi-server:latest -t connorethan/multi-server:$SHA -f ./server/Dockerfile ./server
-build -t connorethan/multi-worker:latest -t connorethan/multi-worker:$SHA -f ./worker/Dockerfile ./worker
+docker build -t connorethan/multi-client:latest -t connorethan/multi-client:$SHA -f ./client/Dockerfile ./client
+docker build -t connorethan/multi-server:latest -t connorethan/multi-server:$SHA -f ./server/Dockerfile ./server
+docker build -t connorethan/multi-worker:latest -t connorethan/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 docker push connorethan/multi-client:latest
 docker push connorethan/multi-client:$SHA
 docker push connorethan/multi-server:latest
