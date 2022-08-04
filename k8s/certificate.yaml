@@ -8,7 +8,7 @@ spec:
     name: letsencrypt-prod
     kind: ClusterIssuer
   # letsencrypt will check if we actually have this domain by trying to access it
-  commonName: testdomainname.com
+  commonName: testdomainname.org
   dnsNames:
-    - testdomainname.com
-    - www.testdomainname.com
+    - testdomainname.org
+    - www.testdomainname.org
